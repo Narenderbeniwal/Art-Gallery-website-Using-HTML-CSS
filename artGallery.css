@@ -17,6 +17,7 @@ h1{
 }
 img{
   width: 20%;
+  filter: grayscale(100%);
 
 }
 .Paintings{
@@ -26,6 +27,7 @@ img{
 #description{
   background-color: lightyellow;
   position: relative;
+  top: 100px;
   left: 25px;
   height: 200px;
   width: 300px;
@@ -44,4 +46,31 @@ img{
   position: fixed;
   bottom: 10px;
   right: 10px;
+}
+img:hover{
+  filter: grayscale(0%);
+
+
+}
+img:hover.title{
+  display: block;
+  filter: grayscale(0%);
+}
+.title>p{
+float: left;
+position:relative;
+left:30px;
+padding-right: 60px;
+
+}
+.title{
+  position: relative;
+  left: 30px;
+  display: none;
+
+  padding-left: 15px;
+}
+.Paintings:hover .title{
+  display: block;
+
 }
